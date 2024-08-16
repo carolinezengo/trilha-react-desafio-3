@@ -5,10 +5,14 @@ import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 import { api } from '../../services/api';
 
+
 import { useForm } from "react-hook-form";
 
 
 import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+
+
+
 
 const Login = () => {
 
@@ -54,9 +58,11 @@ const Login = () => {
                     {errors.senha && <span>Senha é obrigatório</span>}
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
+
                 <Row>
-                    <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <EsqueciText href="#">Esqueci a senha</EsqueciText>
+                    <CriarText href="/Cadastro ">Criar Conta</CriarText>
+                     
                 </Row>
                 </Wrapper>
             </Column>

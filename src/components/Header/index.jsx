@@ -23,12 +23,13 @@ const Header = ({autenticado}) => {
           </Row>
           <Row>
               {autenticado ? (
-                <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4"/>
+                <UserPicture src="https://avatars.githubusercontent.com/u/138873868?s=400&u=ed9b84f35ed18f1c22fe306685ef87a671133d0f&v=4"/>
               ) : (
               <>
                 <MenuRight href="/">Home</MenuRight>
-                <Button title="Entrar" />
-                <Button title="Cadastrar" />
+                 <a href='/Login'>   <Button title="Entrar" /></a>
+                <a href='/Cadastro'><Button title="Cadastrar"/></a>
+               
               </>)}
           </Row>
       </Container>
